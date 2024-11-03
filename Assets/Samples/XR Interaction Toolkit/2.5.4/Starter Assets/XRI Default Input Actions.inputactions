@@ -2622,6 +2622,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "VR Controls",
+            "id": "b02bca6d-ccec-4d71-9f28-76f7749494ac",
+            "actions": [
+                {
+                    "name": "PressJoystickLeft",
+                    "type": "Button",
+                    "id": "693f2b6a-3d6e-479f-944e-caab240cf2e6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "63820b71-aaa9-4999-b225-1080269b9eb0",
+                    "path": "<XRController>{LeftHand}/joystickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressJoystickLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

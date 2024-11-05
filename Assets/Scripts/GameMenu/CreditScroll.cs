@@ -6,19 +6,18 @@ using UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Jobs;
 public class CreditScroll : MonoBehaviour
 {
 
-    public float scrollSpeed = 50f; // Vitesse de defilement
-    public float startDelay = 5f; // Delai avant le debut du defilement
-    public float stopPositionY = 20f; // Position Y ou arreter le defilement
-    public float timeScrolling = 4f; // Temps de defilement des credits
-    public GameObject CreditText; // Le GameObject a desactiver (par exemple, le panneau des credits)
-    public GameObject CreditSection; // Le GameObject a desactiver apres 5 secondes
-    public GameObject MainSection; // Le GameObject a activer apres 5 secondes
-    public Vector2 startPosition; // Position initiale du texte
-
+    public float scrollSpeed = 50f;
+    public float startDelay = 5f;
+    public float stopPositionY = 20f;
+    public float timeScrolling = 4f;
+    public GameObject CreditText;
+    public GameObject CreditSection;
+    public GameObject MainSection;
+    public Vector2 startPosition;
 
     private RectTransform rectTransform;
-    private bool isScrolling = false; // Indique si le defilement est active
-    private bool hasSwitchedObjects = false; // Pour s'assurer que l'activation/desactivation n'arrive qu'une fois
+    private bool isScrolling = false;
+    private bool hasSwitchedObjects = false;
 
     // Start is called before the first frame update
     void Start()

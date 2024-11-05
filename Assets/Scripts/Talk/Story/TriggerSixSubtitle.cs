@@ -4,20 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class TriggerSixSubtitle : MonoBehaviour
 {
-    public GameObject character;              // Référence à l'objet qui a l'Animator
-    public AudioSource audioSource;       // Le composant AudioSource pour la voix
-
-    public AudioClip audioClip;                // Le clip audio unique à jouer
-
+    public GameObject character;
+    public AudioSource audioSource;
+    public AudioClip audioClip;
     public GameObject[] triggerToDisable;
-
-    public SixSubtitle subtitleScript;  // Référence au script NineSubtitle
-
+    public SixSubtitle subtitleScript;
     public string animationStart; 
     public string animationStop; 
 
-
-    private Animator animator;        // Pour stocker la référence à l'Animator
+    private Animator animator;
     private bool isPlaying = false;
 
     void Start()
@@ -39,10 +34,11 @@ public class TriggerSixSubtitle : MonoBehaviour
                 audioSource.PlayOneShot(audioClip);
                 isPlaying = true;
 
-                // Déclenche l'affichage des sous-titres à partir de NineSubtitle
+                // Déclenche l'affichage des sous-titres à partir de SixSubtitle
                 if (subtitleScript != null)
                 {
-                    StartCoroutine(subtitleScript.ShowSubtitles()); // Appelle la méthode coroutine de NineSubtitle
+                    // Appelle la méthode coroutine de SixSubtitle
+                    StartCoroutine(subtitleScript.ShowSubtitles());
                 }
 
                 // Appelle une fonction pour arrêter l'animation lorsque le son est terminé
@@ -61,7 +57,7 @@ public class TriggerSixSubtitle : MonoBehaviour
         yield return new WaitForSeconds(clipLength);
         
         // Arrête l'animation
-        animator.Play(animationStop); // Remplace "NoAnimation" par une animation neutre si besoin
+        animator.Play(animationStop);
         subtitleScript.StopSubtitles();
         isPlaying = false;
         for (int i = 0; i < triggerToDisable.Length; i++)

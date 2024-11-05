@@ -5,13 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-   public void StartBtn() // Clique sur le boutton Jouer
+    // Clique sur le boutton Jouer
+    public void StartBtn()
     {
-        SceneManager.LoadScene("Dungeon"); // Charge la scene "Dungeon"
+        // Charge la scene "Dungeon"
+        SceneManager.LoadScene("Dungeon");
     }
 
-    public void QuitBtn() // Clique sur le boutton quitter
+    // Clique sur le boutton quitter
+    public void QuitBtn()
     {
+        // Quite l'application
         Application.Quit();
     }
 }

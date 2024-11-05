@@ -5,12 +5,12 @@ using System;
 public class Keyboard : MonoBehaviour
 {
     public TMP_InputField inputField;
-    public AudioClip successClip; // Son de reussite
-    public AudioClip failureClip; // Son d'echec
-    public AudioSource audioSource; // Source audio
+    public AudioClip successClip;
+    public AudioClip failureClip;
+    public AudioSource audioSource;
     public string correctCode;
-    public GameObject wallToDisable; // Mur à désactiver
-    public GameObject wallToEnable;  // Mur à activer
+    public GameObject wallToDisable;
+    public GameObject wallToEnable;
     public GameObject[] triggerToDisable;
     public GameObject triggerToEnable;
 

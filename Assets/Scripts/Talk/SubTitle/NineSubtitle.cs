@@ -14,7 +14,6 @@ public class NineSubtitle : MonoBehaviour
     public GameObject subtitle7;
     public GameObject subtitle8;
     public GameObject subtitle9;
-
     public int time1;
     public int time2;
     public int time3;
@@ -33,7 +32,7 @@ public class NineSubtitle : MonoBehaviour
         if (isSubtitleActive) yield break; // Empêche la boucle involontaire
         isSubtitleActive = true;
 
-        // Active les sous-titres un par un avec un délai de 5 secondes
+        // Active les sous-titres un par un avec un délai defini dans Unity (temps que reste un sous afficher)
         backgroundSubtitle.SetActive(true);
         subtitle1.SetActive(true);
         yield return new WaitForSeconds(time1);

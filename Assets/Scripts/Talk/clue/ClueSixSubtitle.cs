@@ -36,10 +36,11 @@ public class ClueSixSubtitle : MonoBehaviour
                 audioSource.PlayOneShot(audioClip);
                 isPlaying = true;
 
-                // Déclenche l'affichage des sous-titres à partir de NineSubtitle
+                // Déclenche l'affichage des sous-titres à partir de SixSubtitle
                 if (subtitleScript != null)
                 {
-                    StartCoroutine(subtitleScript.ShowSubtitles()); // Appelle la méthode coroutine de NineSubtitle
+                    // Appelle la méthode coroutine de SixSubtitle
+                    StartCoroutine(subtitleScript.ShowSubtitles());
                 }
 
                 // Appelle une fonction pour arrêter l'animation lorsque le son est terminé

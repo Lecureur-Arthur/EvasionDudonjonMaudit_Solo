@@ -4,22 +4,17 @@ using UnityEngine;
 
 public class TriggerOneSubtitle : MonoBehaviour
 {
-    public GameObject character;              // Référence à l'objet qui a l'Animator
-    public AudioSource audioSource;       // Le composant AudioSource pour la voix
-
-    public AudioClip audioClip;                // Le clip audio unique à jouer
-
+    public GameObject character;
+    public AudioSource audioSource;
+    public AudioClip audioClip;
     public GameObject[] triggerToDisable;
     public GameObject triggerToEnableTalk;
     public GameObject triggerToEnableFireDoor;
-
-    public OneSubtitle subtitleScript;  // Référence au script NineSubtitle
-
+    public OneSubtitle subtitleScript;
     public string animationStart; 
     public string animationStop; 
 
-
-    private Animator animator;        // Pour stocker la référence à l'Animator
+    private Animator animator;
     private bool isPlaying = false;
 
     void Start()
@@ -44,7 +39,8 @@ public class TriggerOneSubtitle : MonoBehaviour
                 // Déclenche l'affichage des sous-titres à partir de NineSubtitle
                 if (subtitleScript != null)
                 {
-                    StartCoroutine(subtitleScript.ShowSubtitles()); // Appelle la méthode coroutine de NineSubtitle
+                    // Appelle la méthode coroutine de OneSubtitle
+                    StartCoroutine(subtitleScript.ShowSubtitles());
                 }
 
                 // Appelle une fonction pour arrêter l'animation lorsque le son est terminé
@@ -63,7 +59,8 @@ public class TriggerOneSubtitle : MonoBehaviour
         yield return new WaitForSeconds(clipLength);
         
         // Arrête l'animation
-        animator.Play(animationStop); // Remplace "NoAnimation" par une animation neutre si besoin
+        animator.Play(animationStop);
+        // Force l'arret des sous-titre
         subtitleScript.StopSubtitles();
         isPlaying = false;
         for (int i = 0; i < triggerToDisable.Length; i++)

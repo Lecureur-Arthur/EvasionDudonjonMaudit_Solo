@@ -5,15 +5,15 @@ using UnityEngine;
 public class DetectTorchTrigger : MonoBehaviour
 {
     // Références aux murs
-    public GameObject wallToDisable; // Mur à désactiver
-    public GameObject wallToEnable;  // Mur à activer
-    public GameObject animationFire; // Animation de feu
-    public AudioClip successClip; // Son de reussite
-    public AudioSource audioSource; // Source audio
+    public GameObject wallToDisable;
+    public GameObject wallToEnable;
+    public GameObject animationFire;
+    public AudioClip successClip;
+    public AudioSource audioSource;
     public GameObject[] triggerToDisable;
     public GameObject triggerToEnable;
 
-    private bool hasTriggered = false; // Variable de contrôle pour savoir si l'événement a déjà été déclenché
+    private bool hasTriggered = false;
 
     private void OnTriggerEnter(Collider other)
     {

@@ -17,7 +17,7 @@ public class TwoSubtitle : MonoBehaviour
         if (isSubtitleActive) yield break; // Empêche la boucle involontaire
         isSubtitleActive = true;
 
-        // Active les sous-titres un par un avec un délai de 5 secondes
+        //  Active les sous-titres un par un avec un délai defini dans Unity (temps que reste un sous afficher)
         backgroundSubtitle.SetActive(true);
         subtitle1.SetActive(true);
         yield return new WaitForSeconds(time1);

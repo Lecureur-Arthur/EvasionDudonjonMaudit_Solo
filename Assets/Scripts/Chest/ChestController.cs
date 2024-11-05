@@ -8,8 +8,8 @@ public class ChestController : MonoBehaviour
     Animator chestLid;
     bool isOpen = false;
 
-    public AudioClip successClip; // Son de reussite
-    public AudioSource audioSource; // Source audio
+    public AudioClip successClip;
+    public AudioSource audioSource;
     public GameObject[] triggerToDisable;
     public GameObject triggerToEnable;
     public GameObject KeyToEnable;
@@ -22,6 +22,7 @@ public class ChestController : MonoBehaviour
         chestLid = GetComponent<Animator>();
     }
 
+    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.O))

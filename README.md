@@ -36,6 +36,7 @@ Voici la liste des assets utilisés dans ce projet, avec les liens pour chaque r
 - **Pack de matériaux cyberpunk** : [Cyberpunk Material Pack - Unity Asset Store](https://assetstore.unity.com/packages/2d/textures-materials/cyberpunk-material-pack-six-high-quality-materials-188067)
 - **Livres 3D** : Modélisés dans Blender par moi-même
 - **Effets sonores et musiques** : [Freesound](https://freesound.org/)
+- **Dialogues** : Enregistrés par moi-même
 
 ## Dépendances
 

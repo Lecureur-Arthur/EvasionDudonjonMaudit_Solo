@@ -46,7 +46,7 @@ Voici la liste des assets utilisés dans ce projet, avec les liens pour chaque r
 1. **Cloner le projet** :  
    Clonez ce dépôt Git en local :
    ```bash
-   git clone <lien_du_projet_GitHub>
+   git clone <https://github.com/Lecureur-Arthur/EvasionDudonjonMaudit_Solo>
    ```
 
 2. **Ouvrir avec Unity** :  

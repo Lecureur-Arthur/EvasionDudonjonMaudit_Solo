@@ -64,7 +64,7 @@ Voici la liste des assets utilisés dans ce projet, avec les liens pour chaque r
 
 ## Téléchargement de l'Exécutable
 
-Vous pouvez télécharger l'exécutable du jeu depuis [Dropbox](https://www.dropbox.com/scl/fi/fcaey21m3nib49knaoz04/EvasionDuDonjonMauditVR.zip?rlkey=j7uay1h0ejfp6athdje7rlrm3&st=kbi01trd&dl=0).
+Vous pouvez télécharger l'exécutable du jeu depuis [Dropbox](https://www.dropbox.com/scl/fi/fcaey21m3nib49knaoz04/EvasionDuDonjonMauditVR.zip?rlkey=j7uay1h0ejfp6athdje7rlrm3&st=kbi01trd&dl=1).
 
 ## Auteur
 
